@@ -9,10 +9,11 @@ In this comprehensive study, we have developed a method for analyzing gene seque
 * numpy
 * matplotlib.pyplot
 * seaborn
-* math
-* sklearn.preprocessing.LabelEncoder
-* sklearn.cluster.KMeans
-* sklearn.decomposition.PCA
+* PdfPages
+* seaborn
+* sklearn.cluster
+* sklearn.decomposition
+
 
 ## Key Findings
 The project yielded several important findings:
@@ -36,5 +37,5 @@ The project yielded several important findings:
 ## Team
 
 ```javascript
-Hanchun.L
+林涵纯 曹瀛尹 何亚楠 何逸飞 冯健政
 ```
