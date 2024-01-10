@@ -1,4 +1,4 @@
-#图B 同一氨基酸偏好性（6个物种6个图）
+#图D 同一氨基酸偏好性（6个物种6个图）
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
@@ -34,7 +34,7 @@ amino_acid_colors = {
 }
 
 # Loop through each file
-with PdfPages('../Visualization/B/Synonymous_codon_bar.pdf') as pdf:
+with PdfPages('../Visualization/D/Synonymous_codon_bar.pdf') as pdf:
     for file_path in file_list:
         Species = re.search(r'/([^/]*)_', file_path)
 

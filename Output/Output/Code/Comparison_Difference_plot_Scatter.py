@@ -1,4 +1,4 @@
-#图D 跟公共数据比对Fraction和Frequency
+#图A 跟公共数据比对Fraction和Frequency
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
@@ -18,9 +18,9 @@ i = 0
 j = 0
 
 # Loop through each file
-# with PdfPages('../Visualization/D/Comparison_Fraction_dot.pdf') as pdf:
+# with PdfPages('../Visualization/A/Comparison_Fraction_dot.pdf') as pdf1:
 #     for file_path in file_list:
-#         Species = re.search(r'_(.*?)\.', file_path)
+#         Species = re.search(r'F_(.*?)\.', file_path)
 #
 #         # Read the CSV file
 #         data = pd.read_csv(file_path, index_col='codon')
@@ -52,13 +52,13 @@ j = 0
 #         ax.set_title('Difference in Fraction from public data')
 #         ax.set_xticks([])
 #
-#     pdf.savefig()
+#     pdf1.savefig()
 #     plt.close()
 
 
-with PdfPages('../Visualization/D/Comparison_Frequency_dot.pdf') as pdf:
+with PdfPages('../Visualization/A/Comparison_Frequency_dot.pdf') as pdf2:
     for file_path in file_list:
-        Species = re.search(r'_(.*?)\.', file_path)
+        Species = re.search(r'F_(.*?)\.', file_path)
 
         # Read the CSV file
         data = pd.read_csv(file_path, index_col='codon')
@@ -90,5 +90,5 @@ with PdfPages('../Visualization/D/Comparison_Frequency_dot.pdf') as pdf:
         ax.set_title('Difference in Frequency/thousand from public data')
         ax.set_xticks([])
 
-    pdf.savefig()
+    pdf2.savefig()
     plt.close()

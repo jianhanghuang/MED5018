@@ -1,3 +1,4 @@
+#图B，饼图用于描述6个物种的密码子和氨基酸的频率
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -32,14 +33,14 @@ plt.figure(figsize=(5, 5))
 df_Arabidopsis = draw_codon_pie('../../Result/Arabidopsis_freq_拟南芥.csv')
 plt.pie(df_Arabidopsis['codon_frequency'], labels=df_Arabidopsis['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Arabidopsis Codon Frequency Pie Chart')
-plt.savefig('Arabidopsis_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Arabidopsis_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_Arabidopsis = draw_protein_pie('../../Result/Arabidopsis_freq_拟南芥.csv')
 plt.pie(df_cleaned_Arabidopsis['acid_frequency'], labels=df_cleaned_Arabidopsis['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Arabidopsis Protein Frequency Pie Chart')
-plt.savefig('Arabidopsis_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Arabidopsis_Protein_frequency_pie_chart.pdf')
 
 #线虫
 plt.rcParams['font.size'] = 12
@@ -47,14 +48,14 @@ plt.figure(figsize=(5, 5))
 df_elegants = draw_codon_pie('../../Result/C_elegants_freq_线虫.csv')
 plt.pie(df_elegants['codon_frequency'], labels=df_elegants['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('C_elegants Codon Frequency Pie Chart')
-plt.savefig('C_elegants_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/C_elegants_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_elegants = draw_protein_pie('../../Result/C_elegants_freq_线虫.csv')
 plt.pie(df_cleaned_elegants['acid_frequency'], labels=df_cleaned_elegants['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('C_elegants Protein Frequency Pie Chart')
-plt.savefig('C_elegants_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/C_elegants_Protein_frequency_pie_chart.pdf')
 
 #果蝇
 plt.rcParams['font.size'] = 12
@@ -62,14 +63,14 @@ plt.figure(figsize=(5, 5))
 df_Drosophila = draw_codon_pie('../Result/Frequency/Drosophila_freq.csv')
 plt.pie(df_Drosophila['codon_frequency'], labels=df_Drosophila['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Drosophila Codon Frequency Pie Chart')
-plt.savefig('Drosophila_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Drosophila_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_Drosophila = draw_protein_pie('../Result/Frequency/Drosophila_freq.csv')
 plt.pie(df_cleaned_Drosophila['acid_frequency'], labels=df_cleaned_Drosophila['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Drosophila Protein Frequency Pie Chart')
-plt.savefig('Drosophila_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Drosophila_Protein_frequency_pie_chart.pdf')
 
 #人
 plt.rcParams['font.size'] = 12
@@ -77,14 +78,14 @@ plt.figure(figsize=(5, 5))
 df_Human = draw_codon_pie('../Result/Frequency/Human_freq.csv')
 plt.pie(df_Human['codon_frequency'], labels=df_Human['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Human Codon Frequency Pie Chart')
-plt.savefig('Human_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Human_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_Human = draw_protein_pie('../Result/Frequency/Human_freq.csv')
 plt.pie(df_cleaned_Human['acid_frequency'], labels=df_cleaned_Human['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Human Protein Frequency Pie Chart')
-plt.savefig('Human_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Human_Protein_frequency_pie_chart.pdf')
 
 #小鼠
 plt.rcParams['font.size'] = 12
@@ -92,14 +93,14 @@ plt.figure(figsize=(5, 5))
 df_Mouse = draw_codon_pie('../Result/Frequency/Mouse_freq.csv')
 plt.pie(df_Mouse['codon_frequency'], labels=df_Mouse['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Mouse Codon Frequency Pie Chart')
-plt.savefig('Mouse_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Mouse_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_Mouse = draw_protein_pie('../Result/Frequency/Mouse_freq.csv')
 plt.pie(df_cleaned_Mouse['acid_frequency'], labels=df_cleaned_Mouse['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Mouse Protein Frequency Pie Chart')
-plt.savefig('Mouse_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Mouse_Protein_frequency_pie_chart.pdf')
 
 #酵母
 plt.rcParams['font.size'] = 12
@@ -107,11 +108,11 @@ plt.figure(figsize=(5, 5))
 df_Yeast = draw_codon_pie('../Result/Frequency/Yeast_freq.csv')
 plt.pie(df_Yeast['codon_frequency'], labels=df_Yeast['codon'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Yeast Codon Frequency Pie Chart')
-plt.savefig('Yeast_Codon_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Yeast_Codon_frequency_pie_chart.pdf')
 
 plt.rcParams['font.size'] = 12
 plt.figure(figsize=(5, 5))
 df_cleaned_Yeast = draw_protein_pie('../Result/Frequency/Yeast_freq.csv')
 plt.pie(df_cleaned_Yeast['acid_frequency'], labels=df_cleaned_Yeast['protein3'], autopct='%1.1f%%', startangle=90, counterclock=False, textprops={'fontsize': 10})
 plt.title('Yeast Protein Frequency Pie Chart')
-plt.savefig('Yeast_Protein_frequency_pie_chart.pdf')
+plt.savefig('../Visualization/B/Yeast_Protein_frequency_pie_chart.pdf')

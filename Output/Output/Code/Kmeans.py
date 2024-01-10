@@ -1,8 +1,8 @@
+#图C，根据密码子和氨基酸频率对6个物种的密码子进行聚类
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
 
 
 # 假设你的8个物种的数据存储在8个文件中，文件名分别为 species1.csv, species2.csv, ..., species8.csv
