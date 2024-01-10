@@ -3,7 +3,7 @@ This is the final project of the first group of MED5018 in Southern University o
 ## Project Overview
 Using the CDS fasta files, we calculate and compare codon frequencies for all species with public data ,explored the preferences in codon usage and find patterns.
 
-## Dependencies
+## library
 * pandas
 * numpy
 * matplotlib.pyplot
