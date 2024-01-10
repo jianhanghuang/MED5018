@@ -1,8 +1,7 @@
 ## MED5018_Group1
+This is the final project of the first group of MED5018 in Southern University of Science and Technology.The group members include Hunchun Lin, He Yifei, Cao Yingyin, Feng Jianzheng and He Yanan.
 ## Project Overview
-The project aims to
-In this comprehensive study, we have developed a method for analyzing gene sequences with the objective of revealing the characteristics of codon usage patterns across six different species. This method encompasses data cleaning, the calculation of frequencies of codons and their corresponding amino acids, and the visualization of this information. We specifically focused on the preferences in codon usage, a non-random phenomenon observed across species. Through this analysis, we identified both the consistencies and uniqueness in codon preferences among different species, which play a crucial role in various biological processes such as gene expression, cellular functions, RNA processing, protein translation, and folding. This approach offers valuable new insights into the field of molecular genetics, contributing to a deeper understanding of the underlying mechanisms in biological processes.
-
+Using the CDS fasta files, we calculate and compare codon frequencies for all species with public data ,explored the preferences in codon usage and find patterns.
 
 ## Dependencies
 * pandas
@@ -16,18 +15,12 @@ In this comprehensive study, we have developed a method for analyzing gene seque
 
 
 ## Key Findings
-The project yielded several important findings:
-##### 1.Data Reliability:
-* The study compared calculated data with information from public databases (Figure A).
-* Results indicated a relatively small difference, emphasizing the high reliability of the calculated data.
-##### 2.Amino Acid Frequency Patterns:
-* Examined six species, revealing that Leu and Ser had the highest frequency, while Tyr, His, Cys, Met, and Trp had the lowest (Figure B).
-* Noteworthy consistency in these patterns across all six species.
-##### 3.Codon Distribution and Evolutionary Insights:
-* Cluster analysis based on codon and amino acid frequency did not distinctly separate the six species (Figure C), suggesting similarity in codon distribution.
-* Synonymous codon usage patterns revealed interesting relationships: mice and humans exhibited similarities, while Arabidopsis and nematodes shared more commonalities (Figure D).
-* Implications suggest a common evolutionary ancestor, with preserved gene sequences and functions, reflecting conservation of gene expression throughout evolution.
-* Notably, the genetic characteristics of mice, as a model mammalian species, resemble those of humans, suggesting the effectiveness of using model organisms for certain biological studies.
+We find that：
+* 1.The results of the compare show that the difference between the data we calculated and public databases is relatively small.
+* 2.The amino acids Leu and Ser have the highest frequency, while Tyr, His, Cys, Met, and Trp have the lowest frequency, which exhibits significant consistency.
+* 3.We observed that these six species are not distinctly separated when conducting a cluster analysis based on codon and amino acid frequency for six species.
+* 4.Mice and humans exhibit similar trends in synonymous codon usage, while Arabidopsis and nematodes have more similar synonym codon preferences.
+* 5.As a model mammalian species, the genetic characteristics of mice are similar to those of humans, indicating that the use of model organisms can effectively infer human biological traits in certain biological studies.
 ## Visualizations 
 ![A1](image_githubshow/A1.png)
 ![A2](image_githubshow/A2.png)
@@ -39,3 +32,4 @@ The project yielded several important findings:
 ```javascript
 林涵纯 曹瀛尹 何亚楠 何逸飞 冯健政
 ```
+Everyone contributed equally according to the division of labor as well as their interests.
